@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website Javascript</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="py-16">
+        <h1 class="text-center text-4xl	">Bank Account Information </h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-center">
+                <div class="bg-green-500 p-20 ">Deposit Info $<span id="deposit-pre-ammount">00</span></div>
+                <div class="bg-green-500 p-20">Withdraw info $ <span id="withdraw-pre-ammount">00</span></div>
+                <div class="bg-green-500 p-20">Available Blance $ <span id="blance-pre-ammount">1000</span></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-4">
+                <div class="bg-green-500 p-16">
+                    <h3>Add your deposit ammount</h3>
+                    <!-- Deposit box -->
+                    <div class="deposit-form mt-2">
+                        <input
+                            class="shadow appearance-none border rounded w-4/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="deposit-new-ammount" type="text" placeholder="Add your deposit ammount">
+                        <button id="deposit-submit-btn"
+                            class="bg-blue-500 w-4/5 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Submit
+                        </button>
+                        <h3 id="deposit-warning-message" class="text-white"></h3>
+                    </div>
+                </div>
+                <div class="bg-green-500 p-16">
+                    <h3>Add your withdraw ammount</h3>
+                    <!-- withdraw box  -->
+                    <div class="deposit-form mt-2">
+                        <input
+                            class="shadow appearance-none border rounded w-4/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="withdraw-ammount" type="text" placeholder="Add your withdraw ammount">
+                        <button id="withdraw-submit-btn"
+                            class="bg-blue-500 w-4/5 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Submit
+                        </button>
+                        <h3 id="withdraw-warning-message" class="text-white"></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
